@@ -282,7 +282,7 @@ function TimelinePlayer.PerformXFrame(MapModel, XFrame, Player)
 					PropTable[string.sub(Name, 10)] = Value
 				elseif string.find(Name, "Attribute_") then
 					AttributeTable[string.sub(Name, 11)] = Value
-				elseif string.find(Name, "Tween_") then
+				elseif string.find(Name, "Tween_") and Length > 0 then
 					IsTweenFunction = true
 				end
 			end
